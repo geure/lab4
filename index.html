@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ITMD 361 Lab 4</title>
+  </head>
+  <body>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" autocomplete="on" enctype="multipart/form-data">
+      <h1>&ensp;Volunteer Form</h1>
+      <fieldset>
+        <legend><h3>My Info</h3></legend>
+        <div>
+          <label>First Name: <input type="text" name="first_name_field" placeholder="Joe"></label> 
+        </div>
+        <div>
+          <p>
+            <label>Last Name: <input type="text" name="last_name_field" placeholder="Smith"></label>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label>Phone Number: <input type="tel" name="phone_field" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required></label>
+        </p>
+        </div>
+        <div>
+          <p>
+            <label>Email Address: <input type="email" name="email_field" placeholder="joesmith@domain.com"></label>
+          </p>
+        </div>
+        <div>
+          <p>
+            <label>Gender:&ensp;
+              <label for="male">Male</label><input type="radio" name="gender_field" value="Male" id="male">
+              <label for="female">&ensp;Female</label><input type="radio" name="gender_field" value="Female" id="female">
+            </label>
+          </p>
+        </div>
+        <div>
+          <label for="age">Age:&ensp;</label>
+          <select name="age_field" id="age">
+            <option value="under 18">under 18</option>
+            <option value="18 - 24">18 - 24</option>
+            <option value="25 - 34">25 - 34</option>
+            <option value="35 - 44">35 - 44</option>
+            <option value="45 - 54">45 - 54</option>
+            <option value="55 - 64">55 - 64</option>
+            <option value="65 and over">65 and over</option>
+          </select>
+        </div>        
+      </fieldset>
+      <p></p>
+      <fieldset>
+        <legend><h3>My Availability</h3></legend>
+        <div>
+          <div><label for="days">Days Available:</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Sunday">&nbsp;Sunday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Monday">&nbsp;Monday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Tuesday">&nbsp;Tuesday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Wednesday">&nbsp;Wednesday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Thursday">&nbsp;Thursday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Friday">&nbsp;Friday</label></div>
+          <div><label><input type="checkbox" name="available_field[]" value="Saturday">&nbsp;Saturday</label></div>
+        </div>
+        <p></p>
+        <div>
+          <div><label for="textfield">Any Comments?</label></div>
+          <textarea cols="60" rows="10" name="comments_field" placeholder="Enter comments here..."></textarea>
+        </div>
+      </fieldset>
+      <div>
+        <p>
+          <input type="hidden" name="hidden_field" value="geure">
+          <input type="submit" value="Send Me">
+        </p>
+      </div>
+  </body>
+</html>
