@@ -30,8 +30,8 @@
         <div>
           <p>
             <label>Gender:&ensp;</label>
-              <label for="male">Male</label><input type="radio" name="gender_field" value="Male" id="male">
-              <label for="female">&ensp;Female</label><input type="radio" name="gender_field" value="Female" id="female">
+            <label for="male">Male</label><input type="radio" name="gender_field" value="Male" id="male">
+            <label for="female">&ensp;Female</label><input type="radio" name="gender_field" value="Female" id="female">
           </p>
         </div>
         <div>
@@ -51,7 +51,7 @@
       <fieldset>
         <legend><strong>My Availability</strong></legend>
         <div>
-          <div><label for="days">Days Available:</label></div>
+          <div><label>Days Available:</label></div>
           <div><label><input type="checkbox" name="available_field[]" value="Sunday">&nbsp;Sunday</label></div>
           <div><label><input type="checkbox" name="available_field[]" value="Monday">&nbsp;Monday</label></div>
           <div><label><input type="checkbox" name="available_field[]" value="Tuesday">&nbsp;Tuesday</label></div>
@@ -63,7 +63,7 @@
         <p></p>
         <div>
           <div><label for="textfield">Any Comments?</label></div>
-          <textarea cols="60" rows="10" name="comments_field" placeholder="Enter comments here..."></textarea>
+          <textarea cols="60" rows="10" name="comments_field" id="textfield" placeholder="Enter comments here..."></textarea>
         </div>
       </fieldset>
       <div>
@@ -72,5 +72,6 @@
           <input type="submit" value="Send Me">
         </p>
       </div>
+    </form>
   </body>
 </html>
